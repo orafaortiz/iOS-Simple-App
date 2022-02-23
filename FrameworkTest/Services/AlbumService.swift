@@ -27,7 +27,7 @@ struct AlbumService {
             case .success(let data) :
                 
                 guard let albums = try? JSONDecoder().decode([Album].self, from: data as! Data) else {
-                    print("Error on decode Posts")
+                    print("Error on decode Albums")
                     return
                 }
                 

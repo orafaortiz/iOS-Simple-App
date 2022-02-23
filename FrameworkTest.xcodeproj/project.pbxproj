@@ -37,6 +37,11 @@
 		AF7FC41A27C660730028720B /* AlbumsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7FC41927C660730028720B /* AlbumsViewModel.swift */; };
 		AF7FC41C27C661840028720B /* AlbumCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7FC41B27C661840028720B /* AlbumCellViewModel.swift */; };
 		AF7FC41E27C6624F0028720B /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7FC41D27C6624F0028720B /* AlbumCell.swift */; };
+		AF7FC42027C66AFB0028720B /* TodosCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7FC41F27C66AFB0028720B /* TodosCoordinator.swift */; };
+		AF7FC42227C66CF40028720B /* TodosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7FC42127C66CF40028720B /* TodosViewController.swift */; };
+		AF7FC42427C66E670028720B /* TodosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7FC42327C66E670028720B /* TodosViewModel.swift */; };
+		AF7FC42627C66E7E0028720B /* TodoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7FC42527C66E7E0028720B /* TodoCellViewModel.swift */; };
+		AF7FC42827C66E900028720B /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7FC42727C66E900028720B /* TodoCell.swift */; };
 		AF8F492A27BF1D0100EF057B /* APILoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F492927BF1D0100EF057B /* APILoader.swift */; };
 		AF8F493027BF221000EF057B /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F492F27BF221000EF057B /* APIHandler.swift */; };
 		AF8F493227BF31F300EF057B /* Codables.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F493127BF31F300EF057B /* Codables.swift */; };
@@ -77,6 +82,11 @@
 		AF7FC41927C660730028720B /* AlbumsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewModel.swift; sourceTree = "<group>"; };
 		AF7FC41B27C661840028720B /* AlbumCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCellViewModel.swift; sourceTree = "<group>"; };
 		AF7FC41D27C6624F0028720B /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		AF7FC41F27C66AFB0028720B /* TodosCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosCoordinator.swift; sourceTree = "<group>"; };
+		AF7FC42127C66CF40028720B /* TodosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosViewController.swift; sourceTree = "<group>"; };
+		AF7FC42327C66E670028720B /* TodosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosViewModel.swift; sourceTree = "<group>"; };
+		AF7FC42527C66E7E0028720B /* TodoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCellViewModel.swift; sourceTree = "<group>"; };
+		AF7FC42727C66E900028720B /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
 		AF8F492927BF1D0100EF057B /* APILoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILoader.swift; sourceTree = "<group>"; };
 		AF8F492F27BF221000EF057B /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		AF8F493127BF31F300EF057B /* Codables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codables.swift; sourceTree = "<group>"; };
@@ -103,6 +113,7 @@
 				AF12EE9527C56251005D2CFA /* PostsCoordinator.swift */,
 				AF12EEA127C59379005D2CFA /* PostItemCoordinator.swift */,
 				AF7FC41527C65C4E0028720B /* AlbumsCoordinator.swift */,
+				AF7FC41F27C66AFB0028720B /* TodosCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -122,6 +133,7 @@
 				AF12EE9127C5461A005D2CFA /* MenuCell.swift */,
 				AF12EE9B27C57A54005D2CFA /* PostCell.swift */,
 				AF7FC41D27C6624F0028720B /* AlbumCell.swift */,
+				AF7FC42727C66E900028720B /* TodoCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -146,6 +158,8 @@
 				AF12EE9F27C590F0005D2CFA /* PostItemViewModel.swift */,
 				AF7FC41927C660730028720B /* AlbumsViewModel.swift */,
 				AF7FC41B27C661840028720B /* AlbumCellViewModel.swift */,
+				AF7FC42327C66E670028720B /* TodosViewModel.swift */,
+				AF7FC42527C66E7E0028720B /* TodoCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -157,6 +171,7 @@
 				AF12EE9927C57841005D2CFA /* PostsViewController.swift */,
 				AF12EE9D27C590B5005D2CFA /* PostItemViewController.swift */,
 				AF7FC41727C65EA50028720B /* AlbumsViewController.swift */,
+				AF7FC42127C66CF40028720B /* TodosViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -297,6 +312,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF7FC42227C66CF40028720B /* TodosViewController.swift in Sources */,
+				AF7FC42427C66E670028720B /* TodosViewModel.swift in Sources */,
+				AF7FC42827C66E900028720B /* TodoCell.swift in Sources */,
 				AF9FB49427BECC2000BD5D44 /* Constants.swift in Sources */,
 				AF12EE8627C533E6005D2CFA /* MainCoordinator.swift in Sources */,
 				AF12EE9E27C590B5005D2CFA /* PostItemViewController.swift in Sources */,
@@ -311,7 +329,9 @@
 				AF12EE9A27C57841005D2CFA /* PostsViewController.swift in Sources */,
 				AF12EEA627C5BB5D005D2CFA /* TodoService.swift in Sources */,
 				AF12EE9227C5461A005D2CFA /* MenuCell.swift in Sources */,
+				AF7FC42627C66E7E0028720B /* TodoCellViewModel.swift in Sources */,
 				AF7FC41A27C660730028720B /* AlbumsViewModel.swift in Sources */,
+				AF7FC42027C66AFB0028720B /* TodosCoordinator.swift in Sources */,
 				AF759D1527BB45510028A5A3 /* AppDelegate.swift in Sources */,
 				AF12EEA027C590F0005D2CFA /* PostItemViewModel.swift in Sources */,
 				AF8F493427BF36BE00EF057B /* PostService.swift in Sources */,

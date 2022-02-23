@@ -47,7 +47,11 @@ final class MainCoordinator: Coordinator {
             albumsCoordinator.start()
             
         case .todos:
-            print(item.rawValue)
+            
+            let todosCoordinator = TodosCoordinator(navigationController: navigationController)
+            todosCoordinator.parentCoordinator = self
+            childCoordinators.append(todosCoordinator)
+            todosCoordinator.start()
         }
         
         

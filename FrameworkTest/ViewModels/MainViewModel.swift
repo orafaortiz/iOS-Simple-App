@@ -68,6 +68,22 @@ final class MainViewModel {
                 }
             }
         }
+        
+        let todoService = TodoService()
+        todoService.getTodos() { result in
+            switch result {
+            case .failure(let error):
+                print(error)
+                
+            case .success(let items):
+                
+                items.forEach { todo in
+                    
+                    self.coreDataManager.saveTodo(title: todo.title, completed: todo.completed)
+                    
+                }
+            }
+        }
     }
     
     func reload() {

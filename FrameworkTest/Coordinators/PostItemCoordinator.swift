@@ -21,13 +21,10 @@ final class PostItemCoordinator: Coordinator {
     }
     
     func start() {
-        // create event detail view controller
-        // event detail view model
-        // push it onto navigation controller
+        
         let postItemViewController : PostItemViewController = .instantiate()
         let postItemViewModel = PostItemViewModel(postID: postID)
         postItemViewModel.coordinator = self
-        //detailViewController.viewModel = eventDetailViewModel
         postItemViewController.viewModel = postItemViewModel
         navigationController.pushViewController(postItemViewController, animated: true)
     }

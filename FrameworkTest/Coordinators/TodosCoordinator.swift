@@ -1,5 +1,5 @@
 //
-//  AlbumsCoordinator.swift
+//  TodosCoordinator.swift
 //  FrameworkTest
 //
 //  Created by Rafael Ortiz on 23/02/22.
@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-final class AlbumsCoordinator: Coordinator {
+final class TodosCoordinator: Coordinator {
     
     var childCoordinators: [Coordinator] = []
     private let navigationController : UINavigationController
@@ -20,16 +20,20 @@ final class AlbumsCoordinator: Coordinator {
     }
     
     func start() {
-        let albumsViewController : AlbumsViewController = .instantiate()
-        let albumsViewModel = AlbumsViewModel()
-        albumsViewModel.coordinator = self
-        albumsViewController.viewModel = albumsViewModel
-        navigationController.pushViewController(albumsViewController, animated: true)
+        
+        let todosViewController : TodosViewController = .instantiate()
+        let todosViewModel = TodosViewModel()
+        todosViewModel.coordinator = self
+        todosViewController.viewModel = todosViewModel
+        navigationController.pushViewController(todosViewController, animated: true)
     }
     
     func onSelect(_ id: NSManagedObjectID) {
         
-        print("selected")
+//        let postItemCoordinator = PostItemCoordinator(postID: id, navigationController: navigationController)
+//        postItemCoordinator.parentCoordinator = self
+//        childCoordinators.append(postItemCoordinator)
+//        postItemCoordinator.start()
     }
     
     func childDidFinish(_ childCoordinator: Coordinator) {
