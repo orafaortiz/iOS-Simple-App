@@ -20,3 +20,8 @@ struct Todo: Codable {
     let title: String
     let completed: Bool
 }
+
+struct ServiceError: Error,Codable {
+    let httpStatus: Int
+    let message: String
+}

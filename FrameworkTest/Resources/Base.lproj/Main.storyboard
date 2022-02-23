@@ -68,6 +68,36 @@
             </objects>
             <point key="canvasLocation" x="948" y="110"/>
         </scene>
+        <!--Albums View Controller-->
+        <scene sceneID="8dG-v2-Hbi">
+            <objects>
+                <viewController storyboardIdentifier="AlbumsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vgk-i7-akW" customClass="AlbumsViewController" customModule="FrameworkTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qi9-6s-3EK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="42W-uX-dnl">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hCN-2T-nWe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="42W-uX-dnl" firstAttribute="leading" secondItem="hCN-2T-nWe" secondAttribute="leading" id="lbS-Du-D8Y"/>
+                            <constraint firstItem="hCN-2T-nWe" firstAttribute="bottom" secondItem="42W-uX-dnl" secondAttribute="bottom" id="uAc-lD-FRK"/>
+                            <constraint firstItem="42W-uX-dnl" firstAttribute="top" secondItem="hCN-2T-nWe" secondAttribute="top" id="urX-vr-pop"/>
+                            <constraint firstItem="hCN-2T-nWe" firstAttribute="trailing" secondItem="42W-uX-dnl" secondAttribute="trailing" id="v7Z-Am-We3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="42W-uX-dnl" id="S5q-Jy-Ezx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HC8-0E-QX4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="948" y="765"/>
+        </scene>
         <!--Post Item View Controller-->
         <scene sceneID="DAG-4f-Dwz">
             <objects>

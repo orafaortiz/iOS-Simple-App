@@ -87,10 +87,6 @@ final class MainViewModel {
         onUpdate()
     }
     
-    func tappedAddEvent() {
-        coordinator?.startAddEvent()
-    }
-    
     func numberOfRows() -> Int {
         return cells.count
     }

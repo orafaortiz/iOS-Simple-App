@@ -28,25 +28,24 @@ final class MainCoordinator: Coordinator {
         navigationController.setViewControllers([mainViewController], animated: false)
     }
     
-    func startAddEvent() {
-//        let addEventCoordinator = AddEventCoordinator(navigationController: navigationController)
-//        addEventCoordinator.parentCoordinator = self
-//        childCoordinators.append(addEventCoordinator)
-//        addEventCoordinator.start()
-        print("start add event")
-    }
-    
     func onSelect(_ item: MainMenuItems) {
         // trigger child coordinator
         
         switch item {
         case .posts:
+            
             let postsCoordinator = PostsCoordinator(navigationController: navigationController)
             postsCoordinator.parentCoordinator = self
             childCoordinators.append(postsCoordinator)
             postsCoordinator.start()
+            
         case .albums:
-            print(item.rawValue)
+            
+            let albumsCoordinator = AlbumsCoordinator(navigationController: navigationController)
+            albumsCoordinator.parentCoordinator = self
+            childCoordinators.append(albumsCoordinator)
+            albumsCoordinator.start()
+            
         case .todos:
             print(item.rawValue)
         }

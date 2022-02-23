@@ -32,9 +32,12 @@
 		AF759D1F27BB45510028A5A3 /* FrameworkTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF759D1D27BB45510028A5A3 /* FrameworkTest.xcdatamodeld */; };
 		AF759D2127BB45520028A5A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF759D2027BB45520028A5A3 /* Assets.xcassets */; };
 		AF759D2427BB45520028A5A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF759D2227BB45520028A5A3 /* LaunchScreen.storyboard */; };
+		AF7FC41627C65C4E0028720B /* AlbumsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7FC41527C65C4E0028720B /* AlbumsCoordinator.swift */; };
+		AF7FC41827C65EA50028720B /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7FC41727C65EA50028720B /* AlbumsViewController.swift */; };
+		AF7FC41A27C660730028720B /* AlbumsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7FC41927C660730028720B /* AlbumsViewModel.swift */; };
+		AF7FC41C27C661840028720B /* AlbumCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7FC41B27C661840028720B /* AlbumCellViewModel.swift */; };
+		AF7FC41E27C6624F0028720B /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7FC41D27C6624F0028720B /* AlbumCell.swift */; };
 		AF8F492A27BF1D0100EF057B /* APILoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F492927BF1D0100EF057B /* APILoader.swift */; };
-		AF8F492C27BF1EFA00EF057B /* ResponseCodables.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F492B27BF1EFA00EF057B /* ResponseCodables.swift */; };
-		AF8F492E27BF1F0D00EF057B /* RequestCodables.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F492D27BF1F0D00EF057B /* RequestCodables.swift */; };
 		AF8F493027BF221000EF057B /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F492F27BF221000EF057B /* APIHandler.swift */; };
 		AF8F493227BF31F300EF057B /* Codables.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F493127BF31F300EF057B /* Codables.swift */; };
 		AF8F493427BF36BE00EF057B /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F493327BF36BE00EF057B /* PostService.swift */; };
@@ -69,9 +72,12 @@
 		AF759D2027BB45520028A5A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF759D2327BB45520028A5A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF759D2527BB45520028A5A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF7FC41527C65C4E0028720B /* AlbumsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsCoordinator.swift; sourceTree = "<group>"; };
+		AF7FC41727C65EA50028720B /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
+		AF7FC41927C660730028720B /* AlbumsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewModel.swift; sourceTree = "<group>"; };
+		AF7FC41B27C661840028720B /* AlbumCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCellViewModel.swift; sourceTree = "<group>"; };
+		AF7FC41D27C6624F0028720B /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		AF8F492927BF1D0100EF057B /* APILoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILoader.swift; sourceTree = "<group>"; };
-		AF8F492B27BF1EFA00EF057B /* ResponseCodables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodables.swift; sourceTree = "<group>"; };
-		AF8F492D27BF1F0D00EF057B /* RequestCodables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCodables.swift; sourceTree = "<group>"; };
 		AF8F492F27BF221000EF057B /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		AF8F493127BF31F300EF057B /* Codables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codables.swift; sourceTree = "<group>"; };
 		AF8F493327BF36BE00EF057B /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
@@ -96,6 +102,7 @@
 				AF12EE8527C533E6005D2CFA /* MainCoordinator.swift */,
 				AF12EE9527C56251005D2CFA /* PostsCoordinator.swift */,
 				AF12EEA127C59379005D2CFA /* PostItemCoordinator.swift */,
+				AF7FC41527C65C4E0028720B /* AlbumsCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -114,6 +121,7 @@
 			children = (
 				AF12EE9127C5461A005D2CFA /* MenuCell.swift */,
 				AF12EE9B27C57A54005D2CFA /* PostCell.swift */,
+				AF7FC41D27C6624F0028720B /* AlbumCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -136,6 +144,8 @@
 				AF12EE8E27C53786005D2CFA /* MenuCellViewModel.swift */,
 				AF12EE9727C57363005D2CFA /* PostCellViewModel.swift */,
 				AF12EE9F27C590F0005D2CFA /* PostItemViewModel.swift */,
+				AF7FC41927C660730028720B /* AlbumsViewModel.swift */,
+				AF7FC41B27C661840028720B /* AlbumCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -146,6 +156,7 @@
 				AF12EE8727C534D4005D2CFA /* MainViewController.swift */,
 				AF12EE9927C57841005D2CFA /* PostsViewController.swift */,
 				AF12EE9D27C590B5005D2CFA /* PostItemViewController.swift */,
+				AF7FC41727C65EA50028720B /* AlbumsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -162,8 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				AF8F492927BF1D0100EF057B /* APILoader.swift */,
-				AF8F492B27BF1EFA00EF057B /* ResponseCodables.swift */,
-				AF8F492D27BF1F0D00EF057B /* RequestCodables.swift */,
 				AF8F492F27BF221000EF057B /* APIHandler.swift */,
 			);
 			path = Networking;
@@ -292,15 +301,17 @@
 				AF12EE8627C533E6005D2CFA /* MainCoordinator.swift in Sources */,
 				AF12EE9E27C590B5005D2CFA /* PostItemViewController.swift in Sources */,
 				AF12EEA427C5BB4E005D2CFA /* AlbumService.swift in Sources */,
+				AF7FC41827C65EA50028720B /* AlbumsViewController.swift in Sources */,
 				AF12EE9427C5476C005D2CFA /* UIView+Extensions.swift in Sources */,
 				AF759D1F27BB45510028A5A3 /* FrameworkTest.xcdatamodeld in Sources */,
 				AF12EE8427C5339D005D2CFA /* AppCoordinator.swift in Sources */,
-				AF8F492C27BF1EFA00EF057B /* ResponseCodables.swift in Sources */,
+				AF7FC41627C65C4E0028720B /* AlbumsCoordinator.swift in Sources */,
 				AF12EEA227C59379005D2CFA /* PostItemCoordinator.swift in Sources */,
 				AF04C82A27BFDE45007D5C26 /* PostsViewModel.swift in Sources */,
 				AF12EE9A27C57841005D2CFA /* PostsViewController.swift in Sources */,
 				AF12EEA627C5BB5D005D2CFA /* TodoService.swift in Sources */,
 				AF12EE9227C5461A005D2CFA /* MenuCell.swift in Sources */,
+				AF7FC41A27C660730028720B /* AlbumsViewModel.swift in Sources */,
 				AF759D1527BB45510028A5A3 /* AppDelegate.swift in Sources */,
 				AF12EEA027C590F0005D2CFA /* PostItemViewModel.swift in Sources */,
 				AF8F493427BF36BE00EF057B /* PostService.swift in Sources */,
@@ -310,9 +321,10 @@
 				AF12EE8127C52EEC005D2CFA /* CoreDataManager.swift in Sources */,
 				AF12EE8827C534D4005D2CFA /* MainViewController.swift in Sources */,
 				AF759D1727BB45510028A5A3 /* SceneDelegate.swift in Sources */,
+				AF7FC41C27C661840028720B /* AlbumCellViewModel.swift in Sources */,
 				AF8F493027BF221000EF057B /* APIHandler.swift in Sources */,
 				AF12EE8B27C53581005D2CFA /* UIViewController+Extensions.swift in Sources */,
-				AF8F492E27BF1F0D00EF057B /* RequestCodables.swift in Sources */,
+				AF7FC41E27C6624F0028720B /* AlbumCell.swift in Sources */,
 				AF8F492A27BF1D0100EF057B /* APILoader.swift in Sources */,
 				AF12EE9827C57363005D2CFA /* PostCellViewModel.swift in Sources */,
 				AF8F493227BF31F300EF057B /* Codables.swift in Sources */,
