@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21C52" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="AlbumItem" representedClassName=".AlbumItem" syncable="YES" codeGenerationType="class">
-        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="title" optional="YES" attributeType="String"/>
-        <attribute name="user_id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="title"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <entity name="PostItem" representedClassName=".PostItem" syncable="YES" codeGenerationType="class">
         <attribute name="body" attributeType="String"/>
@@ -15,14 +18,17 @@
         </uniquenessConstraints>
     </entity>
     <entity name="TodoItem" representedClassName=".TodoItem" syncable="YES" codeGenerationType="class">
-        <attribute name="completed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="title" optional="YES" attributeType="String"/>
-        <attribute name="user_id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="completed" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="title"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <elements>
-        <element name="AlbumItem" positionX="-54" positionY="18" width="128" height="74"/>
+        <element name="AlbumItem" positionX="-54" positionY="18" width="128" height="44"/>
         <element name="PostItem" positionX="-63" positionY="-18" width="128" height="73"/>
-        <element name="TodoItem" positionX="-36" positionY="27" width="128" height="89"/>
+        <element name="TodoItem" positionX="-36" positionY="27" width="128" height="59"/>
     </elements>
 </model>

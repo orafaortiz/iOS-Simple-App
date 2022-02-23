@@ -22,6 +22,7 @@ struct PlaceholderAPI {
     
     static var base = "https://jsonplaceholder.typicode.com"
     static var posts = base + "/posts"
+    static var albums = base + "/albums"
 }
 
 enum MainMenuItems: String {

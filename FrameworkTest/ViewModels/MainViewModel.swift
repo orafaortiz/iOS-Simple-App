@@ -52,6 +52,22 @@ final class MainViewModel {
                 }
             }
         }
+        
+        let albumService = AlbumService()
+        albumService.getAlbums() { result in
+            switch result {
+            case .failure(let error):
+                print(error)
+                
+            case .success(let items):
+                
+                items.forEach { album in
+                    
+                    self.coreDataManager.saveAlbum(title: album.title)
+                    
+                }
+            }
+        }
     }
     
     func reload() {
